@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Seguidor de Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://emprendimiento.uniagustiniana.edu.co/sites/default/files/inline-images/logo-Uniagustiniana_0.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-image: url('https://moviltronics.com/moviltronics.com/wp-content/uploads/2019/10/99-2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 200px 20px;
+        }
+        header h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            line-height: 1.5;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Proyecto: Seguidor de Línea</h1>
+</header>
+
+<nav>
+    <a href="#materiales">Materiales</a>
+    <a href="#integrantes">Integrantes</a>
+    <a href="#programacion">Programación</a>
+    <a href="#resultados">Resultados</a>
+</nav>
+
+<section id="materiales">
+    <h2>Materiales</h2>
+    <ul>
+        <li> 
+            <h1>Sensores infrarrojos</h1>
+            <h2>Sensor De Linea Qtr-8a Arreglo Análogo De 8</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_987219-MCO44877676433_022021-F.webp" height="250px" width="250px
+            alt="Sensor infrarrojo">
+            <li>Sensor de linea (QTR-8A)
+
+              <div> Características: </div> 
+                <div>Dimensiones: 75 x 13mm</div>
+               <div> Voltaje de funcionamiento: 3.3V-5,0 V</div>
+                <div>Consumo de corriente: 100 mA</div>
+                <div>Formato de salida: Voltaje análogo</div>
+                <div>Distancia óptima de detección: 3 mm</div>
+                <div>Máxima distancia de detección recomendada: 6 mm</div>
+                <div>Peso sin terminales: 3g</div></li>
+        </li>
+        <h1>
+            Microcontrolador (Arduino Nano)
+            <h2>Tarjeta Arduino Nano V3 Atmega328p Usb Tipo C</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_869775-MCO52026533609_102022-F.webp" height="250px" width="250px 
+            alt="Microcontrolador Arduino Nano">
+            <li>ESPECIFICACIONES TÉCNICAS
+                <div>Microcontrolador: ATmega328P</div>
+                <div>Chip USB: CH340G</div>
+               <div> Voltaje de Alimentación: 7V -12V DC</div>
+                <div>Voltaje de I/O: 5V</div>
+                <div>Pines Digitales I/O: 14 (6 PWM)</div>
+                <div>Entradas Analógicas: 8</div> <div>
+               <div> Corriente máx. entrada/salida: 40mA</div>
+                <div>Memoria FLASH: 32KB (2KB usados por el Bootloader)</div>
+                <div>Memoria SRAM: 2KB</div>
+                <div>Memoria EEPROM: 1KB</div>
+                <div>Frecuencia de Reloj: 16 MHz</div>
+                <div>Dimensiones: 18.5 mm x 43.2 mm</div></li>
+                </div>
+        </h1>
+        <h1>
+            Motorreductores
+            <h2>Motorreductor N20 1000 Rpm - Motor Dc Robot 6v - 12v</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_797659-MCO31133622888_062019-F.webp" height="250px" width="250px"
+            alt="Motorreductor">
+        </h1><li>Motorreductor 1000 rpm 6/12V
+
+            <div>Model: N20</div>
+           <div> Material: metal</div>
+            <div>Main color: silver tone</div>
+           <div> Length: approx.36mm</div></li>
+        <h1>
+            Ruedas
+            <h2>Rueda Pololu 42×19 mm Tipo D Llanta Para Robot c/u</h2>
+            <img src="https://megatronica.cc/wp-content/uploads/2022/02/Pololu-1090-wiel-1.jpg" height="250px" width="250px
+            alt="Ruedas">
+        </h1> <li>
+            Rueda Pololu 42×19 Mm Tipo D Llanta Para Robot</li>
+        <h1>
+            Baterías
+            <h2>Pila Batería Litio Ion 18650 Recargable 3,7v 6800 Mah</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_900315-MCO77819394919_072024-F.webp" height="250px" width="250px
+            alt="Baterías">
+        </h1>
+        <div>  <li>
+            Batería 18650 Barril 6800 Mah 3.7 Voltios Li-ion Pila Recarga
+Esta batería recargable 18650 es una solución versátil para una amplia gama de proyectos electrónicos. Con una impresionante capacidad de 6800mAh y un voltaje de 3.7V, es un componente esencial para aplicaciones que requieren energía confiable y duradera.
+</div>
+CARACTERÍSTICAS
+
+ <div>Baja tasa de descarga y sin efecto memoria.</div>
+<div>Amigable con el medio ambiente y recargable hasta 1800 veces.</div>
+ <div>Color rojo distintivo. No compatible con vapeadores.</div>
+ <div>6800 mAh</div>
+<div> div3.7 v</div>
+ <div>li-ion</div>
+ <div>Bateria Plana</div>
+
+ <div>MEDIDAS</div>
+
+
+<div>Largo: 6.5 cm</div>
+<div>Ancho: 1.5 Cm</div>
+<div>Peso: 44 G</div>
+        </li>
+    </ul>
+</section>
+
+<section id="integrantes">
+    <h2>Integrantes</h2>
+    <ul>
+        <h1>David Alejandro Garcia Cuta</h1>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+
+            <a href="https://www.instagram.com/david.garc23/profilecard/?igsh=dzlqZTJ4M3V1MWg0">
+            <img src="img/Yo_bonito.jpg" width="250px" height="300px" alt ="Foto de David Garcia"></a>
+            </a>
+            
+        </body>
+        </html>
+        <h1>Johan Sebastian Garcia Duran</h1>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <a href="https://www.instagram.com/sebastiangrc_03/profilecard/?igsh=czd3cTJhZXBrZTdy">
+                <img src="img/Sebas_Garcia.jpg" width="250px" height="300px" alt ="Foto de David Garcia"></a>
+                </a>
+        </body>
+        </html>
+        <h1>El otro compañero</h1>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <a href="https://www.instagram.com/alvarouribevelez/profilecard/?igsh=MThvODF2ejJicjBsOA==">
+                <img src="img/JACK.jpg" width="250px" height="300px" alt ="Foto de David Garcia"></a>
+                </a>
+        </body>
+        </html>
+    </ul>
+</section>
+
+<section id="programacion">
+    <h2>Programación</h2>
+    <p>El siguiente es el código utilizado para el robot seguidor de línea:</p>
+    <pre>
+        #include <QTRSensors.h>
+
+            // Pines de los motores (usando pines analógicos para el puente H)
+            const int motorIzqA = A0;   // Entrada del puente H para el motor izquierdo
+            const int motorIzqB = A1;
+            const int motorDerA = A2;   // Entrada del puente H para el motor derecho
+            const int motorDerB = A3;
+            
+            // Configuración de los sensores
+            QTRSensors qtr;
+            const uint8_t SensorCount = 8;
+            uint16_t sensorValues[SensorCount];
+            
+            // Constantes para el control PID
+            int velocidadBase = 150;      // Velocidad base de los motores
+            float kp = 0.1;               // Ajusta la constante proporcional
+            float kd = 0.3;               // Ajusta la constante derivativa
+            int ultimoError = 0;
+            
+            void setup() {
+              // Configura los sensores
+              qtr.setTypeRC();
+              qtr.setSensorPins((const uint8_t[]){3, 4, 5, 6, 7, 8, 9, 10}, SensorCount);
+              qtr.setEmitterPin(2);
+            
+              // Configura los pines de los motores como salida
+              pinMode(motorIzqA, OUTPUT);
+              pinMode(motorIzqB, OUTPUT);
+              pinMode(motorDerA, OUTPUT);
+              pinMode(motorDerB, OUTPUT);
+            
+              Serial.begin(9600);
+              delay(1000);
+              Serial.println("Calibrando sensores...");
+            
+              // Calibración de los sensores
+              for (int i = 0; i < 400; i++) {
+                qtr.calibrate();
+                delay(20);
+              }
+              Serial.println("Calibración completada");
+            }
+            
+            void loop() {
+              // Lee la posición de la línea
+              int posicion = qtr.readLineBlack(sensorValues);
+              Serial.print("Posición: ");
+              Serial.println(posicion);  // Imprime la posición para depuración
+              
+              int error = posicion - 3500;  // Ajuste el valor de 3500 según los datos de depuración
+            
+              // Cálculo del PID
+              int ajuste = kp * error + kd * (error - ultimoError);
+              ultimoError = error;
+            
+              // Ajusta el valor de "ajuste" para limitar la respuesta del robot
+              if (ajuste > 100) {
+                ajuste = 100;
+              } else if (ajuste < -100) {
+                ajuste = -100;
+              }
+            
+              // Calcula la velocidad de cada motor
+              int velocidadIzquierda = velocidadBase + ajuste;
+              int velocidadDerecha = velocidadBase - ajuste;
+            
+              // Limita la velocidad entre 0 y 255
+              velocidadIzquierda = constrain(velocidadIzquierda, 0, 255);
+              velocidadDerecha = constrain(velocidadDerecha, 0, 255);
+            
+              // Mensaje de depuración para indicar la dirección
+              if (ajuste > 0) {
+                Serial.println("Girando a la derecha");
+              } else if (ajuste < 0) {
+                Serial.println("Girando a la izquierda");
+              } else {
+                Serial.println("Moviéndose hacia adelante");
+              }
+            
+              // Controla los motores
+              moverMotorIzquierdo(velocidadIzquierda);
+              moverMotorDerecho(velocidadDerecha);
+              
+              delay(100);  // Pequeño retraso para evitar lecturas demasiado rápidas
+            }
+            
+            // Funciones para controlar los motores
+            void moverMotorIzquierdo(int velocidad) {
+              if (velocidad > 0) {
+                analogWrite(motorIzqA, velocidad);
+                analogWrite(motorIzqB, 0);
+              } else {
+                analogWrite(motorIzqA, 0);
+                analogWrite(motorIzqB, -velocidad);
+              }
+            }
+            
+            void moverMotorDerecho(int velocidad) {
+              if (velocidad > 0) {
+                analogWrite(motorDerA, velocidad);
+                analogWrite(motorDerB, 0);
+              } else {
+                analogWrite(motorDerA, 0);
+                analogWrite(motorDerB, -velocidad);
+              }
+            }
+    </pre>
+</section>
+
+<section id="resultados">
+    <h2>Resultados</h2>
+    <p>El robot completó el circuito con un % de precisión, mostrando mejoras en la detección de curvas.</p>
+</section>
+<img src="img/Seguidordelinea.jpg" height="300px" width="250px" alt="Seguidordelinea">
+<img src="img/Seguidordelinea2.jpg" height="300px" width="250px" alt="Seguidordelinea2">
+<footer>
+    <p>&copy; 2024 Proyecto Seguidor de Línea</p>
+</footer>
+
+</body>
+</html>
