@@ -85,7 +85,8 @@
 <nav>
     <a href="#materiales">Materiales</a>
     <a href="#integrantes">Integrantes</a>
-    <a href="#programacion">Programación</a>
+    <a href="#programacion">Programación </a>
+    <a href="Modelo Matematico">Modelo Matematico</a>
     <a href="#resultados">Resultados</a>
 </nav>
 
@@ -209,7 +210,7 @@ CARACTERÍSTICAS
                 </a>
         </body>
         </html>
-        <h1>El otro compañero</h1>
+        <h1>Julian Esteban Angel Suarez</h1>
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -227,8 +228,9 @@ CARACTERÍSTICAS
 </section>
 
 <section id="programacion">
+
     <h2>Programación</h2>
-    <p>El siguiente es el código utilizado para el robot seguidor de línea:</p>
+    <p>El siguiente es el código es utilizado para el robot seguidor de línea:</p>
     <pre>
         #include <QTRSensors.h>
 
@@ -338,10 +340,64 @@ CARACTERÍSTICAS
             }
     </pre>
 </section>
+<section id="programacion">
+<h2>Programacion Matlab</h2>
+<pre>
+    V_0 = 0.81;
+theta_0 = 30 * pi / 180;
+
+        A = [0 0 -V_0*sin(theta_0);
+             0 0 V_0*cos(theta_0);
+             0 0 0]
+
+        B = [cos(theta_0) 0;
+             sin(theta_0) 0;
+             0 1]
+
+    C =     [1 0 0;
+             0 1 0;
+             0 0 1];
+    D = 0;
+
+    eig(A)
+        sys = ss(A,B,C,D);
+        step(sys);
+
+    ctrb(A,B)
+    rank(ctrb(A,B))
+
+        obsv(A,C)
+        rank(obsv(A,C))
+</pre>
+
+</section>
+
+    <section id="Modelo Matematico">
+
+        <p>https://docs.google.com/document/d/1d-1fWjnzl0yMuAhN4AkNtlQpHpCZ2uwg/edit?usp=sharing&ouid=104184162908597649773&rtpof=true&sd=true</p>
+       
+</section>
 
 <section id="resultados">
     <h2>Resultados</h2>
-    <p>El robot completó el circuito con un % de precisión, mostrando mejoras en la detección de curvas.</p>
+    <p>El robot completó el circuito con un 70% de precisión, mostrando mejoras en la detección de curvas.</p>
+    <P>Tuvimos varios problemas con la regleta ya que esta tiene que tener un margen de distancia muy pequeño al suelo</P>
+    <p>con esto los sensores tuvieron un gasto progresivo con las practicas y al final solo un lado recibia bien las señales del color de la pista  
+ </p>    
+ <pre>
+    <h1>conclusión</h1>
+    El desarrollo de nuestro seguidor de línea evidenció fortalezas y áreas de mejora clave. 
+    Logramos un desempeño del 70% en eficiencia y velocidad al realizar giros, pero enfrentamos desafíos técnicos como fallos 
+    en el motor izquierdo, desgaste de los sensores y baja adherencia de las ruedas a la pista. Estos problemas resaltan la importancia de seleccionar 
+    componentes adecuados y robustos, así como de optimizar el diseño para mejorar la precisión y confiabilidad en futuros proyectos.
+
+    <p>
+    <h1>resultado esperado</h1>
+    Lograr un seguidor de línea con mayor eficiencia y estabilidad en los giros, 
+    mejorando la adherencia de las ruedas, optimizando el rendimiento de los motores y minimizando el desgaste de los sensores. 
+    Esto permitiría un desempeño más preciso y consistente en diferentes condiciones de pista.
+    </p>
+ </pre>
 </section>
 <footer>
 
@@ -353,20 +409,20 @@ CARACTERÍSTICAS
     </div>
         <img src="img/ImagenN3.jpg" width="300px"   height="250px" alt="ImagenN3">
 <div>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Video</title>
-    </head>
-    <body>
-        <video width="350px"    height="200px"  controls> 
-                <source src="PRUEBA.mp4"    type="PRUEBA/mp4">
-
-        </video>
-    </body>
+    
     </html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>VIDEO DEL SEGUIDOR DE Linea</title>
+            <H1>https://youtu.be/UWvZAKcE2hQ</H1>
+        </head>
+        <body>
+            
+        </body>
+        </html>
 
 </div>
 
